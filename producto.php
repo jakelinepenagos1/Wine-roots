@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
-<body>
+<body class="formulario">
 
 <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -53,46 +53,53 @@
 
     </header>
 
-    <main>
+    <main class="formulario2">
     
 
         <div class="container">
 
         <form class="mt-5" method="POST" action="registroProducto.php">
             <div class="row">
-                <div class="col">
+                <div class="col mt-6">
                     <input type="text" class="form-control" placeholder="Nombre del producto" name="nombreProducto">
                 </div>
-                <div class="col">
+                <div class="colmt-6">
                     <input type="text" class="form-control" placeholder="marca" name="marcaProducto">
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col">
+            <div class="row mt-2">
+                <div class="col-6">
                         <input type="number" class="form-control" placeholder="unidades" name="cantidadProducto">
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col">
-                        <input type="number" class="form-control" placeholder="tiempo en que se conservo" name="tiempoProducto">
+            <div class="row mt-2">
+                <div class="col-6">
+                        <input type="number" class="form-control" placeholder="tiempo en que se conservo(---años----)" name="tiempoProducto">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col mt-6">
+                        <input type="number" class="form-control" placeholder="precio (---por unidad---)" name="precioProducto">
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col">
-                        <input type="number" class="form-control" placeholder="precio" name="precioProducto">
-                </div>
-            </div>
-            <div class="row mt-3">
-                    <div class="col">
+                    <div class="col mt-6">
                         <input type="text" class="form-control" placeholder="FOTO URL" name="foto">
                    </div>
             </div>
 
     
             </div>
+            <div class="row mt-3">
+                    <div class="col mt-3">
            
-            <button type="submit" class="btn btn-info btn-block mt-3" name="boton">ingresar producto al mercado</button>
-        </form>
+            <button class="boton"  class="btn btn-info btn-block mt-4" name="boton">ingresar producto al mercado</button>
+
+            </div>
+
+    
+            </div>
+                    </form>
         
         </div>
     
@@ -100,5 +107,12 @@
     
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<footer class="formulario2">
+
+<h1>hola</h1>
+</footer>
+
 </body>
+
 </html>

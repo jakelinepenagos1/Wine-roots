@@ -52,6 +52,8 @@
 
     </header>
 
+    <main class="producto">
+
 
     <?php 
         //Consultar datos
@@ -82,18 +84,22 @@
                         <img src=" <?php echo($producto["foto"]) ?> " class="card-img-top" alt="foto">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo($producto["nombreProducto"])?></h5>
-                            <h6>tiempo que ha estado en conservacion</h6>
-                            <p class="card-text"><?php echo($producto["tiempo"])?></p>
-                            <h6>cantidad que se enuentra en venta </h6>
+                            <h6>marca del producto </h6>
+                            <p class="card-text"><?php echo($producto["marca"])?></p>
+                            <h6>cantidad de venta</h6>
                             <p class="card-text"><?php echo($producto["cantidad"])?></p>
-                                <a href="eliminarPersonas.php?id=<?php echo($usuario["codigoUsuario"])?>" class="btn btn-danger">Eliminar</a>
+                            <h6>precio por unidad  </h6>
+                            <p class="card-text"><?php echo($producto["precio"])?></p>
+                            <h6>tiempo que ha estado en conservacion   ------organizado por años-----</h6>
+                            <p class="card-text"><?php echo($producto["tiempo"])?></p>
+                                <a href="eliminarProducto.php?id=<?php echo($producto["idProducto"])?>" class="btn btn-danger">Eliminar</a>
                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar">
                                    Editar
                                 </button>
                             </div>
                         </div>
 
-                        <div class="modal fade" id="editar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="editar"<?php echo($producto["idProducto"])?> tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -103,19 +109,24 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="">
+                                    <form method="POST" action="editarProducto.php?id=<?php echo($producto["idProducto"])?>">>
 
                                         <div class="form-group">
                                             <label>Nombre:</label>
-                                            <input type="text" class="form-control">  
+                                            <input type="text"name="nombreEditar" class="form-control" values="<?php echo($producto["nombreProducto"])?>">  
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Descripcion:</label>
-                                            <textarea class="form-control" rows="3"></textarea>  
+                                            <label>marca:</label>
+                                            <input type="text"name="marcaEditar" class="form-control" values="<?php echo($producto["marca"])?>">  
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                        <div class="form-group">
+                                            <label>precio:</label>
+                                            <input type="number" name="precioEditar" class="form-control" values="<?php echo($producto["precio"])?>" >  
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary" name="botonEsditar">Enviar</button>
                                     
                                     </form>
                                 </div>
@@ -134,6 +145,8 @@
     
     
     </div>
+
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>   
 </body>

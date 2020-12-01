@@ -84,6 +84,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          
 
 
             <hr>
@@ -95,29 +96,62 @@
 
 <div class="row">
 
-    <div class="col-4">
+    <div class="col-5">
         
 
         <p>
+            <img class="img2"src="img/logo.jpg" alt="imagen1">
         Somos el directorio digital de industria de vinos en colombia,reunimos una amplia y variada cantidad de ofertas de empresas que suministran y proveen este producto a nivel nacional e internacional, haciendo parte de la cadena de valor de nuestro comercio. Una de nuestras metas principales es la de abrirse al comercio exterior donde se alcance a llegar a nuevos mercados y clientes, los cuales implican una mayor diversificación y ofrecen un producto de mayor calidad para el cliente
         </p>
 
+        <p>
+           Con la mejor mano de obra,buscamos ofrecerte lo mejor en vino,alcohol, acidez, aromas y sabores que se presentan mezclas de sentidos sin que ninguno de estos elementos destaque sobre los demás, creando una sensación armoniosa en la boca,muestran sus aromas primarios de manera franca. Son los aromas que proceden de la variedad de uva y del suelo en el que ésta se cultiva, y por eso te invitamos para que participes de esta experiencia y disfrutes con wine roots .
+          </p>
+
+
         </div>
 
-        <div class="col-4">
+        <hr>
+        <div class="col-7">
 
+        <hr>
 
-           <p>
-           Somos el directorio digital de industria de vinos en colombia,reunimos una amplia y variada cantidad de ofertas de empresas que suministran y proveen este producto a nivel nacional e internacional, haciendo parte de la cadena de valor de nuestro comercio. Una de nuestras metas principales es la de abrirse al comercio exterior donde se alcance a llegar a nuevos mercados y clientes, los cuales implican una mayor diversificación y ofrecen un producto de mayor calidad para el cliente
-          </p>
-          
+        <h3>registro de usuario</h3>
+        <h6>no obligatorio </h6>
+
+        <form class="mt-5" method="POST" action="registroPersonas.php">
+
+        
+        <div class="row mt-5">
+                
+                        <input type="number" class="form-control" placeholder="identificacion" name="cedula">
+
+        <div class="col mt-5">
+                    <input type="text" class="form-control" placeholder="Nombre del usuario" name="nombre">
+                </div>
+                <hr>
+                <div class="col mt-5">
+                    <input type="text" class="form-control" placeholder="apellido" name="apellido">
+                </div>
+                <hr>
+            
+            <div class="row mt-5">
+                
+                        <input type="text" class="form-control" placeholder="descripcion" name="descripcion">
+                </div>
+            </div>
+
+            <hr>
+
+            <button class="btn btn-info btn-block mt-4" name="boton">enviar</button>
+
+            
+            
 
     </div>
 
 </div>
-
-
-                
+      
 
     </main>
 
