@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo1.css">
     
     
 </head>
@@ -159,8 +159,11 @@
 
     <hr>
 
-      <h3>derechos resevardos a </h3>
-      <h4>jakeline penagos escobar </h4>
+      <h4>derechos resevardos a :</h4>
+      <h5>jakeline penagos escobar y a valeria gomez</h5>
+      <h4>datos:</h4>
+      <h5>coreo:jakelinepenagos@gmail.com-----coreo:valeritagomez@gmail.com</h5>
+      <h5>pagina realizada por la intuticion educativa de cesde </h5>
   
      </footer>
 

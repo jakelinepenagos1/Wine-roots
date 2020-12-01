@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTADO</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
-<body>
+<body >
 <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.php"> 
@@ -93,13 +93,11 @@
                             <h6>tiempo que ha estado en conservacion   ------organizado por años-----</h6>
                             <p class="card-text"><?php echo($producto["tiempo"])?></p>
                                 <a href="eliminarProducto.php?id=<?php echo($producto["idProducto"])?>" class="btn btn-danger">Eliminar</a>
-                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar">
-                                   Editar
-                                </button>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar<?php echo($producto["idProducto"])?>">Editar</button>
                             </div>
                         </div>
 
-                        <div class="modal fade" id="editar"<?php echo($producto["idProducto"])?> tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="editar<?php echo($producto["idProducto"])?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
@@ -126,7 +124,7 @@
                                             <input type="number" name="precioEditar" class="form-control" values="<?php echo($producto["precio"])?>" >  
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary" name="botonEsditar">Enviar</button>
+                                        <button type="submit" class="btn btn-primary" name="botonEditar">Enviar</button>
                                     
                                     </form>
                                 </div>
@@ -148,6 +146,19 @@
 
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrt
+N/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<footer class="producto">
+
+<hr>
+<h4>derechos resevardos a :</h4>
+      <h5>jakeline penagos escobar y a valeria gomez</h5>
+      <h4>datos:</h4>
+      <h5>coreo:jakelinepenagos@gmail.com-----coreo:valeritagomez@gmail.com</h5>
+      <h5>pagina realizada por la intuticion educativa de cesde </h5>
+
+</footer>
+
 </body>
 </html>
