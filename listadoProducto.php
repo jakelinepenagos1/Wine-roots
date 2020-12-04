@@ -93,7 +93,8 @@
                             <h6>tiempo que ha estado en conservacion   ------organizado por años-----</h6>
                             <p class="card-text"><?php echo($producto["tiempo"])?></p>
                                 <a href="eliminarProducto.php?id=<?php echo($producto["idProducto"])?>" class="btn btn-danger">Eliminar</a>
-                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar<?php echo($producto["idProducto"])?>">Editar</button>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#editar<?php echo($producto["idProducto"])?>">Editar
+                                </button>
                             </div>
                         </div>
 
@@ -107,7 +108,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" action="editarProducto.php?id=<?php echo($producto["idProducto"])?>">>
+                                <form method="POST" action="editarProducto.php?id=<?php echo($producto["idProducto"])?>">>
+
+                                   
+                            </div>
+                        </div>
 
                                         <div class="form-group">
                                             <label>Nombre:</label>
@@ -155,7 +160,7 @@ N/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <h4>derechos resevardos a :</h4>
       <h5>jakeline penagos escobar y a valeria gomez</h5>
       <h4>datos:</h4>
-      <h5>coreo:jakelinepenagos@gmail.com-----coreo:valeritagomez@gmail.com</h5>
+      <h5>coreo:jakelinepenagos@gmail.com -----coreo:valeritagomez@gmail.com</h5>
       <h5>pagina realizada por la intuticion educativa de cesde </h5>
 
 </footer>
